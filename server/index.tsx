@@ -4,16 +4,22 @@ const express = require('express');
 // CORS = Cross-Origin Resource Sharing, permet les requetes front to back
 const cors = require('cors');
 
+const PORT = process.env.PORT || 8080;
 const app = express();
 
 
-
 app.use(cors());
+
 
 app.get('/', (request, response) => {
     response.send('Hello world !!! ');
 });
 
-app.listen(8080,  () => {
-    console.log('listening on port 8080');
+app.get('/api', (request, response) => {
+   response.json({ message: "Les chiffres Mason !!"});
+});
+
+// .listen doit toujours être après les .get
+app.listen(PORT,  () => {
+    console.log(`listening on port ${PORT}`);
 });
