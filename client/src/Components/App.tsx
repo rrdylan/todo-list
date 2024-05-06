@@ -1,7 +1,7 @@
 import React from 'react';
 // import axios from 'axios';
 import TodoItem from './TodoItem';
-import '../App.css';
+import '../Styles/App.css';
 
 
 // const apiCall = () => {
@@ -54,7 +54,17 @@ const App = (): React.JSX.Element => {
 
     return (
         <div className="App">
+
             <div className="App-header">
+                <nav>
+                    <ol>
+                        <li> <a href={'#'}> TodoList </a></li>
+                    </ol>
+
+                </nav>
+            </div>
+
+            <div className="App-body">
                 <div>
                     <input
                         type={"text"}
@@ -63,8 +73,6 @@ const App = (): React.JSX.Element => {
                     />
                     <button onClick={addTodo}> Ajouter une tache </button>
                 </div>
-            </div>
-            <div className="App-body">
                 <div>
                     <ul>
                         {

@@ -10,7 +10,6 @@ const app = express();
 
 app.use(cors());
 
-
 app.get('/', (request, response) => {
     response.send('Hello world !!! ');
 });
