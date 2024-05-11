@@ -56,11 +56,18 @@ const App = (): React.JSX.Element => {
         <div className="App">
 
             <div className="App-header">
-                <nav>
-                    <ol>
-                        <li> <a href={'#'}> TodoList </a></li>
-                    </ol>
+                <nav className={"Navbar"}>
 
+                    <div className={"Navbar-home"}>
+                        <a href={"#"}> Menu </a>
+                    </div>
+
+                    <ul className={"Navbar-items"}>
+                        <li className={"active"}> <a href="#" > TODOList </a></li>
+                        <li> <a href="#" > Button 2 </a></li>
+                        <li> <a href="#" > Button 3 </a></li>
+                        <li> <a href="#" > Button 4 </a></li>
+                    </ul>
                 </nav>
             </div>
 

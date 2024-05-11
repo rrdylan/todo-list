@@ -1,0 +1,44 @@
+html,body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Navbar {
+    background-color: rgb(204, 239, 255);
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.Navbar *{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Navbar-items{
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 4em;
+}
+
+.Navbar-items li {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+}
+
+.Navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.Navbar-home {
+    width: 200px;
+}
+
+.Navbar .active {
+    background-color: rgb(77, 166, 255);
+}
